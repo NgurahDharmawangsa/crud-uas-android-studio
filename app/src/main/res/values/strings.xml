@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">PROGRAM KASIR</string>
+    <string-array name="barang">
+        <item>Pilih Barang</item>
+        <item>Laptop</item>
+        <item>TV</item>
+        <item>Spiker</item>
+        <item>Kipas</item>
+        <item>Blender</item>
+        <item>Kulkas</item>
+        <item>Radio</item>
+        <item>Kompor</item>
+        <item>Oven</item>
+        <item>Mixer</item>
+    </string-array>
+    <string-array name="jumlah">
+        <item>Pilih Jumlah</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="kasir">
+        <item>Pilih Nama Kasir</item>
+        <item>Ketut Juliartha</item>
+        <item>Putu Putrawan</item>
+        <item>Wayan Gunawan</item>
+        <item>Made Dedo</item>
+        <item>Putu Ari</item>
+        <item>Komang Balik</item>
+        <item>Kadek Sudiartha</item>
+        <item>Kadek Suryawan</item>
+        <item>Wayan Anom</item>
+        <item>Nyoman Arta</item>
+
+
+    </string-array>
+</resources>

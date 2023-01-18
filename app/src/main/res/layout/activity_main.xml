@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KASIR UAS PPB"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:paddingBottom="20dp" />
+
+    <!--membuat edittext untuk menginput nama barang-->
+    <Spinner
+        android:layout_marginBottom="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNamab"
+        android:textColor="@color/white"
+        android:entries="@array/barang"/>
+
+    <!--membuat edittext untuk menginput harga-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginBottom="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Harga"
+            android:backgroundTint="#fff"
+            android:textColor="@color/white"
+            android:id="@+id/txtHarga"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--membuat spinner yang berisi daftar jumlah-->
+    <Spinner
+        android:layout_marginBottom="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtJumlah"
+        android:textColor="@color/white"
+        android:entries="@array/jumlah"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginBottom="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="#fff"
+            android:hint="Masukkan Jumlah Diskon (%)"
+            android:id="@+id/txtDiskon"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--membuat spinner yang berisi daftar penjaga kasir-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginBottom="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="#fff"
+            android:hint="Masukkan Tanggal Pembelian"
+            android:id="@+id/txtTanggal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:layout_marginBottom="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:id="@+id/txtNamak"
+        android:entries="@array/kasir"/>
+
+    <!--membuat button simpan-->
+    <Button
+        android:layout_marginBottom="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="20dp"
+        android:text="Simpan"
+        android:backgroundTint="#03C988"
+        android:onClick="btnSimpan"
+        android:id="@+id/btnSimpan"/>
+
+    <!--membuat button tampil data-->
+    <Button
+        android:layout_marginBottom="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="20dp"
+        android:backgroundTint="#13005A"
+        android:text="Tampil Data"
+        android:id="@+id/btnTampilData"/>
+
+</LinearLayout>
